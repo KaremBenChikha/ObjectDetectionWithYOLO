@@ -1,25 +1,41 @@
-# ObjectDetectionWithYOLO
-OpenCv algorithm to detect objects with YOLO 
+# Object Detection with YOLO
 
-**YOLO (You Only Look Once)** is a very powerful and a fast algorithm in object detection. 
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
+![YOLO](https://img.shields.io/badge/YOLO-00FFFF?style=flat-square)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-# step 0
+OpenCV algorithm to detect objects using the YOLO (You Only Look Once) deep learning model.
 
-- Download this file abd save it insode yolo folder : [yolov3.weights](https://pjreddie.com/media/files/yolov3.weights)
+## Overview
 
-- Create a folder **images** and have some pictures inside it to test the object detection.
+YOLO is a state-of-the-art, real-time object detection system. This project uses OpenCV's DNN module to run YOLOv3 inference on images.
 
-# step 1
-Open Terminal and navigate to project directory, make sure python3 is isntalled, if yes type this command to install necessary dependencies:
-~~~
+## Setup
+
+```bash
+# 1. Install dependencies
 pip3 install -r requirements.txt
-~~~ 
-Go and grub a cup of coffee as it may take a while.
 
-# step 2
-to execute the image detection: 
-~~~
-python3 ObjectDetecet.py --image images/apples-and-oranges.png
-~~~
+# 2. Download YOLOv3 weights
+# Download yolov3.weights and save it in the yolo/ folder
+# https://pjreddie.com/media/files/yolov3.weights
 
-don't forget 'q' to quit the window frame
+# 3. Add images
+mkdir images
+# Place your test images inside the images/ folder
+```
+
+## Usage
+
+```bash
+python3 ObjectDetect.py --image images/your-image.png
+```
+
+Press `q` to quit the window.
+
+## Dependencies
+
+- Python 3
+- OpenCV
+- NumPy
